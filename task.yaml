@@ -1,6 +1,6 @@
 {
     "ipcMode": null,
-    "executionRoleArn": "<your ECS Instance Role e.g arn:aws:iam::1234567890:role/ecsInstanceRole>",
+  #  "executionRoleArn": "<your ECS Instance Role e.g arn:aws:iam::1234567890:role/ecsInstanceRole>",
     "containerDefinitions": [
         {
             "dnsSearchDomains": null,
@@ -28,7 +28,8 @@
             "memoryReservation": 128,
             "volumesFrom": [],
             "stopTimeout": null,
-            "image": "<+artifact.image>",
+            "image": "docker.io/nginx",
+           # "image": "<+artifact.image>",
             "startTimeout": null,
             "firelensConfiguration": null,
             "dependsOn": null,
@@ -50,7 +51,7 @@
     ],
     "placementConstraints": [],
     "memory": "512",
-    "taskRoleArn": "<your ECS Instance Role e.g arn:aws:iam::1234567890:role/ecsInstanceRole>",
+ #    "taskRoleArn": "<your ECS Instance Role e.g arn:aws:iam::1234567890:role/ecsInstanceRole>",
     "family": "fargate-task-definition",
     "pidMode": null,
     "requiresCompatibilities": [
